@@ -20,6 +20,13 @@ namespace TipCalculator
 			// Override point for customization after application launch.
 			// If not required for your application you can safely delete this method
 
+			//base.FinishedLaunching(application, launchOptions);
+
+			Window = new UIWindow(UIScreen.MainScreen.Bounds);
+
+			Window.RootViewController = new myViewController();
+			Window.MakeKeyAndVisible();
+
 			return true;
 		}
 
